@@ -75,32 +75,12 @@ pip install -r requirements.txt
 
 ```python
 # 1. Process the data
-from data_processing import load_data, preprocess_data
-
-data = load_data('path/to/your/data.csv')
-X_train, X_test, y_train, y_test = preprocess_data(data)
 
 # 2. Train a model
-from models import train_model, evaluate_model
-
-model = train_model(X_train, y_train)
-metrics = evaluate_model(model, X_test, y_test)
 
 # 3. Analyze with SHAP
-from shap_analysis import explain_model, plot_shap_summary
 
-explainer = explain_model(model, X_train)
-plot_shap_summary(explainer, X_test)
 ```
-
-## Features
-
-- **Modular Design**: Each component is self-contained and reusable
-- **Model Agnostic**: Works with various scikit-learn and tree-based models
-- **Interpretability**: Comprehensive SHAP analysis for understanding model predictions
-- **Scalable**: Designed to handle datasets of varying sizes
-- **Reproducible**: Consistent results through proper random seed management
-
 ## SHAP Analysis Outputs
 
 The SHAP analysis module generates several types of visualizations:
@@ -108,7 +88,6 @@ The SHAP analysis module generates several types of visualizations:
 - **Summary Plots**: Overview of feature importance across all predictions
 - **Dependence Plots**: Relationship between feature values and SHAP values
 - **Force Plots**: Individual prediction explanations
-- **Waterfall Plots**: Detailed breakdown of individual predictions
 
 ## Example Results
 
@@ -126,56 +105,3 @@ Adjust parameters in each module:
 - **Data Processing**: Modify feature engineering steps, scaling methods
 - **Models**: Change model types, hyperparameters, cross-validation settings
 - **SHAP Analysis**: Adjust plot styles, sample sizes, visualization options
-
-## Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## Best Practices
-
-- Always version your data and models
-- Document any changes to preprocessing steps
-- Use consistent random seeds for reproducibility
-- Validate SHAP values with domain knowledge
-- Keep dependencies updated
-
-## Troubleshooting
-
-### Common Issues
-
-**Memory errors with SHAP**
-- Use a smaller background dataset for the explainer
-- Calculate SHAP values in batches
-
-**Long computation times**
-- Reduce the number of samples used for SHAP analysis
-- Consider using approximate SHAP methods for large datasets
-
-**Model compatibility**
-- Ensure your model is compatible with SHAP (tree-based models work best)
-- Use appropriate explainers (TreeExplainer, LinearExplainer, etc.)
-
-## License
-
-[Specify your license here]
-
-## Contact
-
-[Your contact information or team details]
-
-## Acknowledgments
-
-- SHAP library by Scott Lundberg
-- Scikit-learn development team
-- [Any other acknowledgments]
-
-## References
-
-- Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions. *Advances in Neural Information Processing Systems*.
-- [Add other relevant papers or resources]
