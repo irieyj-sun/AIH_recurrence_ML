@@ -1,10 +1,8 @@
-# Machine Learning Project with SHAP Analysis
-
-This repository contains a complete machine learning pipeline including data processing, model training, and model interpretability using SHAP (SHapley Additive exPlanations) analysis.
+# Dynamic, Individualized, Artificial Intelligence-Powered Prediction of Recurrent Autoimmune Hepatitis after Liver Transplantation: A Multi-Centre Cohort Study 
 
 ## Project Overview
 
-This project implements an end-to-end machine learning workflow that processes data, trains predictive models, and provides detailed model interpretability through SHAP analysis. The modular structure allows for easy experimentation and maintenance.
+This project implements an end-to-end machine learning workflow that processes data, trains predictive models, and provides detailed model interpretability through SHAP analysis. Our AI-powered clinical decision model provides personalized prediction of recurrent Autoimmune Hepatitis(rAIH) post liver transplant. It provides insight into modifiable and non-modifiable predictors of rAIH, supporting more personalized immunosuppressive strategies to improve long-term outcomes. 
 
 ## Repository Structure
 
