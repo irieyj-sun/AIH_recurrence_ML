@@ -41,19 +41,6 @@ Provides model interpretability tools:
 - Summary plots and dependence plots
 - Model behavior analysis
 ```
-
-## Usage
-
-### Basic Workflow
-
-```python
-# 1. Process the data
-
-# 2. Train a model
-
-# 3. Analyze with SHAP
-
-```
 ## SHAP Analysis Outputs
 
 The SHAP analysis module generates several types of visualizations:
