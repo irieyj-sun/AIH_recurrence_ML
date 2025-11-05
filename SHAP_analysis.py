@@ -594,7 +594,7 @@ if __name__ == "__main__":
     
     
     # Load models
-    model_path_all = '/AIH_recurrence_ML/models/saved_models/all/best_models_20250409_154412/logistic_regression.joblib'
+    model_path_all = '/AIH_recurrence_ML/models/logistic_regression.joblib'
 
     shap_save_path_all = 'AIH_shap_values_all_logreg.pkl'
 
