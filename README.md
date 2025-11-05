@@ -8,6 +8,7 @@ This project implements an end-to-end machine learning workflow that processes d
 
 ```
 .
+├── requirements.txt    # All packages required for the Python environment
 ├── data_processing.py    # Data loading, cleaning, and preprocessing
 ├── models.py             # Machine learning model definitions and training
 ├── shap_analysis.py      # SHAP-based model interpretability analysis
@@ -39,32 +40,6 @@ Provides model interpretability tools:
 - Individual prediction explanations
 - Summary plots and dependence plots
 - Model behavior analysis
-
-## Prerequisites
-
-```bash
-python >= 3.8
-```
-
-### Required Libraries
-
-```bash
-pip install numpy pandas scikit-learn
-pip install shap matplotlib seaborn
-pip install jupyter  # optional, for notebooks
-```
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
 ```
 
 ## Usage
