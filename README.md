@@ -40,7 +40,7 @@ Provides model interpretability tools:
 - Individual prediction explanations
 - Summary plots and dependence plots
 - Model behavior analysis
-```
+
 ## SHAP Analysis Outputs
 
 The SHAP analysis module generates several types of visualizations:
