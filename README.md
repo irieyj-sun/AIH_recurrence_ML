@@ -8,11 +8,12 @@ This project implements an end-to-end machine learning workflow that processes d
 
 ```
 .
-├── requirements.txt    # All packages required for the Python environment
+├── requirements.txt      # All packages required for the Python environment
 ├── data_processing.py    # Data loading, cleaning, and preprocessing
 ├── models.py             # Machine learning model definitions and training
 ├── shap_analysis.py      # SHAP-based model interpretability analysis
-└── README.md            # Project documentation
+├── models                # Trained models 
+└── README.md             # Project documentation
 ```
 
 ## File Descriptions
