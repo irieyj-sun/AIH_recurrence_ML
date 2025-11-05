@@ -45,7 +45,7 @@ def format_metric_with_std(mean, std):
 def save_best_models(results, best_estimators, dataset, save_dir='best_models'):
     """Save the best performing models and their metadata."""
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    save_path = Path(f'/AIH/models/saved_models/cw_stacking/{dataset}/{save_dir}_{timestamp}')
+    save_path = Path(f'/AIH_recurrence_ML/models/{dataset}/{save_dir}_{timestamp}')
     save_path.mkdir(parents=True, exist_ok=True)
     
     results.to_csv(save_path / 'model_results.csv')
